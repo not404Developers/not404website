@@ -1,115 +1,11 @@
-/* Page-specific styles */
+/* Page-specific style */
 
 /* Page Hero Section */
 
 
-/* Services Page Styles */
-.detailed-services-section {
-  padding: 100px 0;
-  background-color: var(--background-dark);
-}
+/* Services Page style */
 
-.service-detail {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-  margin-bottom: 100px;
-}
-
-.service-detail.reverse {
-  direction: rtl;
-}
-
-.service-detail.reverse .service-detail-content {
-  direction: ltr;
-}
-
-.service-detail-content h2 {
-  font-size: 2.5rem;
-  color: var(--text-primary);
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.service-detail-content p {
-  color: var(--text-secondary);
-  line-height: 1.8;
-  margin-bottom: 30px;
-  font-size: 1.1rem;
-}
-
-.service-features {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.service-features li {
-  color: var(--text-secondary);
-  margin-bottom: 12px;
-  position: relative;
-  padding-left: 25px;
-}
-
-.service-features li:before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--primary-color);
-  font-weight: bold;
-}
-
-.service-detail-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-mockup {
-  width: 400px;
-  height: 300px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.1), rgba(var(--secondary-rgb), 0.1));
-  border: 2px solid rgba(var(--primary-rgb), 0.2);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
-
-.service-mockup::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgba(var(--primary-rgb), 0.1) 0%, transparent 70%);
-  animation: pulse 4s ease-in-out infinite;
-}
-
-.services-cta {
-  padding: 80px 0;
-  background-color: var(--background-light);
-  text-align: center;
-}
-
-.services-cta h2 {
-  font-size: 2.5rem;
-  color: var(--text-primary);
-  margin-bottom: 20px;
-  font-weight: 700;
-}
-
-.services-cta p {
-  color: var(--text-secondary);
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-}
-
-/* Team Page Styles */
+/* Team Page style */
 .team-section {
   padding: 100px 0;
   background-color: var(--background-dark);
@@ -223,7 +119,7 @@
   line-height: 1.6;
 }
 
-/* Contact Page Styles */
+/* Contact Page style */
 .contact-main-section {
   padding: 100px 0;
   background-color: var(--background-dark);
@@ -343,7 +239,7 @@
   gap: 15px;
 }
 
-/* Responsive styles for new pages */
+/* Responsive style for new pages */
 @media (max-width: 992px) {
   .story-content {
     grid-template-columns: 1fr;
