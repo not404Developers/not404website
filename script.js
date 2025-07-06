@@ -341,7 +341,7 @@ window.addEventListener('load', () => {
         </div>
     `;
 
-  const loadingStyles = `
+  const loadingstyle = `
         .loading-screen {
             position: fixed;
             top: 0;
@@ -377,9 +377,9 @@ window.addEventListener('load', () => {
         }
     `;
 
-  const loadingStyleSheet = document.createElement('style');
-  loadingStyleSheet.textContent = loadingStyles;
-  document.head.appendChild(loadingStyleSheet);
+  const loadingstylesheet = document.createElement('style');
+  loadingstylesheet.textContent = loadingstyle;
+  document.head.appendChild(loadingstylesheet);
 
   document.body.appendChild(loadingScreen);
 
@@ -388,7 +388,7 @@ window.addEventListener('load', () => {
     loadingScreen.style.opacity = '0';
     setTimeout(() => {
       loadingScreen.remove();
-      loadingStyleSheet.remove();
+      loadingstylesheet.remove();
     }, 500);
   }, 1500);
 });
