@@ -110,17 +110,18 @@ function initMobileMenu() {
 }
 
 function initNavigation() {
-  const navLinks = document.querySelectorAll('.nav-menu .nav-item');
+  const navLinks = document.querySelectorAll('.nav-menu .nav-item a');
 
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
-      e.preventDefault();
+      // Don't prevent default - allow navigation to work
+      // Only handle active state management
 
-      // Remove active class from all links
-      navLinks.forEach(item => item.classList.remove('active'));
+      // Remove active class from all nav items
+      document.querySelectorAll('.nav-menu .nav-item').forEach(item => item.classList.remove('active'));
 
-      // Add active class to clicked link
-      link.classList.add('active');
+      // Add active class to clicked link's parent nav-item
+      link.parentElement.classList.add('active');
     });
   });
 
