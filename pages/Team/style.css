@@ -1,0 +1,112 @@
+.team-section {
+  padding: 100px 0;
+  background-color: var(--background-dark);
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.team-member {
+  background-color: var(--background-light);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+.member-image {
+  padding: 30px 30px 20px;
+  text-align: center;
+}
+
+.member-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.member-info {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.member-info h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.member-role {
+  color: var(--primary-color);
+  font-size: 1rem;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.member-bio {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.member-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(var(--primary-rgb), 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: var(--primary-color);
+  color: var(--text-primary);
+  transform: scale(1.1);
+}
+
+.join-team-section {
+  padding: 80px 0;
+  background-color: var(--background-light);
+  text-align: center;
+}
+
+.join-team-section h2 {
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.join-team-section p {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
+}
