@@ -77,7 +77,7 @@
   gap: 1rem;
 }
 
-.btn {
+.btn,.button {
   border: none;
   font-size: 1rem;
   font-weight: 600;
@@ -86,16 +86,17 @@
   cursor: pointer;
   transition: var(--transition);
   color: var(--text-primary);
+  text-decoration: none;
 }
 
-.sign-in {
+.button,.sign-in{
   background-color: transparent;
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(10px);
   background-color: var(--glass-bg);
 }
 
-.sign-in:hover {
+.sign-in:hover,.button:hover{
   border-color: var(--primary-color);
   box-shadow: 0 0 15px var(--blue-glow);
 }
