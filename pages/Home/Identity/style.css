@@ -3,14 +3,6 @@
   display: flex;
   justify-content: center;
 }
-
-.identity-section {
-  padding: 4rem 1rem;
-  display: flex;
-  justify-content: center;
-  background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-light) 100%);
-}
-
 .identity-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -43,7 +35,8 @@
   top: 0;
   bottom: 0;
   width: 3px;
-  background: linear-gradient(to bottom, 
+  background: 
+  linear-gradient(to bottom, 
               transparent 0%, 
               var(--primary-color) 20%, 
               var(--secondary-color) 80%, 
