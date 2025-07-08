@@ -81,31 +81,10 @@ function initMobileMenu() {
 
   menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
+    navMenu.classList.toggle('active');
 
-    if (menuToggle.classList.contains('active')) {
-      // Show mobile menu
-      navMenu.style.display = 'flex';
-      navMenu.style.flexDirection = 'column';
-      navMenu.style.position = 'absolute';
-      navMenu.style.top = '100%';
-      navMenu.style.left = '0';
-      navMenu.style.right = '0';
-      navMenu.style.backgroundColor = 'var(--background-dark)';
-      navMenu.style.padding = '1rem';
-      navMenu.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.3)';
-
-      // Show nav buttons below the menu
-      if (navButtons) {
-        navButtons.style.display = 'flex';
-        navButtons.style.flexDirection = 'column';
-        navButtons.style.gap = '0.5rem';
-        navButtons.style.marginTop = '1rem';
-      }
-    } else {
-      // Hide mobile menu
-      navMenu.style = '';
-      if (navButtons) navButtons.style = '';
-    }
+    // Toggle body scroll when menu is open
+    document.body.style.overflow = menuToggle.classList.contains('active') ? 'hidden' : '';
   });
 }
 
