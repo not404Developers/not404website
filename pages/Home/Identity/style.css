@@ -1,0 +1,238 @@
+.identity-section {
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.identity-section {
+  padding: 4rem 1rem;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-light) 100%);
+}
+
+.identity-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  width: 100%;
+  justify-items: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+.identity-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.content-block {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.tech-line {
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, 
+              transparent 0%, 
+              var(--primary-color) 20%, 
+              var(--secondary-color) 80%, 
+              transparent 100%);
+}
+
+.identity-statement {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin: 0;
+  text-align: center;
+}
+.section-title{
+  justify-content: center;
+}
+
+.statement-highlight {
+  color: var(--text-primary);
+  font-weight: 500;
+  position: relative;
+}
+
+.statement-highlight::after {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(130, 215, 255, 0.2);
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.identity-section {
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--background-dark) 0%, var(--background-light) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.identity-container {
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Enhanced Header Animation */
+.identity-header {
+  position: relative;
+  text-align: center;
+  margin-bottom: 4rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding: 0 1.5rem;
+}
+
+.title-highlight {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  background: rgba(130, 215, 255, 0.2);
+  z-index: -1;
+  border-radius: 6px;
+  transform: rotate(-1deg);
+  animation: highlightPulse 3s infinite ease-in-out;
+}
+
+.title-pulse {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 2px solid var(--primary-color);
+  border-radius: 50%;
+  z-index: -2;
+  opacity: 0;
+  animation: pulseOut 3s infinite ease-out;
+}
+
+/* Animated Content Blocks */
+.identity-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.content-block {
+  position: relative;
+  padding-left: 2.5rem;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: var(--delay);
+}
+
+.tech-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(to bottom, 
+              transparent 0%, 
+              var(--primary-color) 20%, 
+              var(--secondary-color) 80%, 
+              transparent 100%);
+  animation: lineGlow 2s infinite alternate;
+}
+
+
+.identity-visuals {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-top: 2rem;
+}
+
+.visual-element {
+  text-align: center;
+  flex: 0 1 140px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+  animation-delay: var(--delay);
+}
+
+.hexagon {
+  position: relative;
+  width: 120px;
+  height: 138px;
+  margin: 0 auto 1.5rem;
+  transition: var(--transition);
+}
+
+.hexagon-bg {
+  width: 100%;
+  height: 100%;
+  fill: rgba(255,255,255,0.03);
+  stroke: rgba(130, 215, 255, 0.15);
+  stroke-width: 1px;
+  transition: var(--transition);
+  transform-origin: center;
+  animation: float 6s infinite ease-in-out;
+}
+
+.hexagon:hover .hexagon-bg {
+  fill: rgba(130, 215, 255, 0.05);
+  stroke: rgba(130, 215, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.hexagon-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.hexagon-icon {
+  width: 100%;
+  height: auto;
+  fill: var(--primary-color);
+  transition: var(--transition);
+}
+
+.hexagon:hover .hexagon-icon {
+  fill: var(--accent-color);
+  transform: scale(1.1);
+}
